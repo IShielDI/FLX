@@ -21,9 +21,10 @@ const F = {
 };
 
 // ─── API HELPERS ─────────────────────────────────────────────────────────────
-function authHeaders(token: string|null) {
-  return token ? { "Content-Type":"application/json", "Authorization":`Bearer ${token}` }
-               : { "Content-Type":"application/json" };
+function authHeaders(token: string | null) {
+  return token
+    ? { "Content-Type": "application/json", "Authorization": `Bearer ${token}` }
+    : { "Content-Type": "application/json" };
 }
 async function apiFetch(path, opts = {}) {
   const res = await fetch(`${API}${path}`, opts);
