@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 
 // ─── CONFIG — only thing you ever change ─────────────────────────────────────
-const API = "http://localhost:8000";
+const API = "https://flx-api.onrender.com";
 
 // ─── DESIGN TOKENS ───────────────────────────────────────────────────────────
 const C = {
